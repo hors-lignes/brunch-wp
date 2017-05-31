@@ -1,0 +1,29 @@
+{
+  "name": "brunch-wp",
+  "description": "Wordpress theme builder",
+  "private": true,
+  "author": "Hors-Lignes",
+  "version": "0.0.1",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "start": "brunch watch --server",
+    "build": "brunch build --production"
+  },
+  "dependencies": {
+    "fastclick": "^1.0.6",
+    "jquery": "^3.2.1",
+    "normalize.css": "^7.0.0"
+  },
+  "devDependencies": {
+    "auto-reload-brunch": "^2",
+    "autoprefixer": "^7.1.1",
+    "csswring": "^6.0.0",
+    "imagemin-brunch": "^1.0.1",
+    "postcss-brunch": "^2.0.5",
+    "uglify-js-brunch": "^2"
+  }
+}
