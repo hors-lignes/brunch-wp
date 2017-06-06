@@ -2,32 +2,21 @@ module.exports = {
 	files: {
 		javascripts: {
 			joinTo: {
-				'vendor.js': /^(?!js)/,
-				'theme.js': /^js/,
+				'vendor.js': /^(?!app)/,
+				'theme.js': /^app/,
 			}
 		},
 		stylesheets: {
 			joinTo: {
-				'vendor.css': /^vendor/,
-				'theme.css': /^css/,
+				'vendor.css': /^(?!app)/,
+				'theme.css': /^app/,
 			}
 		},
 	},
 
-	conventions: {
-		assets: /^theme\//,
-		vendor: /^vendor\//,
-	},
-
 	paths: {
 		public: '../wp-content/themes/hors-lignes',
-		watched: ['theme','vendor','js','css'],
-	},
-
-	modules: {
-		nameCleaner: function( path ) {
-			return path.replace(/^theme\/|vendor\/|js\/|css\//g, '');
-		},
+		watched: ['theme','vendor','js','css','app'],
 	},
 
 	npm: {

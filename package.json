@@ -19,7 +19,6 @@
     "normalize.css": "^7.0.0"
   },
   "devDependencies": {
-    "auto-reload-brunch": "^2",
     "autoprefixer": "^7.1.1",
     "csswring": "^6.0.0",
     "imagemin-brunch": "^1.0.1",
