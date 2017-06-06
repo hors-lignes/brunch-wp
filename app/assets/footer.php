@@ -1,5 +1,3 @@
-<?php $tpl = get_template_directory_uri(); ?>
-
 <footer>
 
 </footer>
