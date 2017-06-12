@@ -10,8 +10,8 @@
 		"url": ""
 	},
 	"scripts": {
-		"start": "brunch watch --server",
-		"build": "brunch build --production"
+		"start": "brunch w",
+		"build": "brunch b -p"
 	},
 	"dependencies": {
 		"fastclick": "^1.0.6",
@@ -19,10 +19,10 @@
 		"normalize.css": "^7.0.0"
 	},
 	"devDependencies": {
-		"autoprefixer": "^7.1.1",
-		"csswring": "^6.0.0",
+		"autoprefixer-brunch": "^1.8.5",
+		"clean-css-brunch": "^2.10.0",
+		"css-brunch": "^2.10.0",
 		"imagemin-brunch": "^1.0.1",
-		"postcss-brunch": "^2.0.5",
 		"uglify-js-brunch": "^2"
 	}
 }

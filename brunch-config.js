@@ -16,7 +16,6 @@ module.exports = {
 
 	paths: {
 		public: '../wp-content/themes/hors-lignes',
-		watched: ['theme','vendor','js','css','app'],
 	},
 
 	npm: {
@@ -26,15 +25,6 @@ module.exports = {
 		styles: {},
 		static: [],
 		aliases: {},
-	},
-
-	plugins: {
-		postcss: {
-			processors: [
-				require('autoprefixer')(),
-				require('csswring')(),
-			]
-		},
 	},
 
 	sourceMaps: 'inline',
