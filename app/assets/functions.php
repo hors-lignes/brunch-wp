@@ -1,6 +1,7 @@
 <?php
 
 define( 'TPL_DIR', get_template_directory_uri() );
+require_once 'lib/cssimg.php';
 
 // DISABLE EMOJIS 
 remove_action('wp_head', 'print_emoji_detection_script', 7);
