@@ -3,7 +3,7 @@
 define( 'TPL_DIR', get_template_directory_uri() );
 require_once 'lib/cssimg.php';
 
-// DISABLE EMOJIS 
+// DISABLE EMOJIS
 remove_action('wp_head', 'print_emoji_detection_script', 7);
 remove_action('wp_print_styles', 'print_emoji_styles');
 add_filter( 'emoji_svg_url', '__return_false' );
@@ -24,3 +24,13 @@ add_action( 'after_setup_theme', function() {
     add_theme_support( 'menus' );
 } );
 // / THEME SETUP
+
+// PHP print if not empty, with prefix and suffix
+function p( $prefix, $value, $suffix='', $else='' ) {
+    return (
+		empty( $value )
+		? $else
+		//: $prefix.nl2br( htmlspecialchars( $value, ENT_QUOTES, 'UTF-8' ) ).$suffix
+		: $prefix.$value.$suffix
+	);
+}
