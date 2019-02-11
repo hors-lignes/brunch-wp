@@ -12,7 +12,7 @@
 	<?php } ?>
 	<?php wp_head(); ?>
 </head>
-<body class="<?= ( is_front_page() ) ? 'home' : '' ?>">
+<body <?php body_class( is_front_page() ) ? 'home' : '' ); ?>>
 
 <header>
 
