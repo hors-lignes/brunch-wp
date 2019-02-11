@@ -1,6 +1,7 @@
 <?php
 
 define( 'TPL_DIR', get_template_directory_uri() );
+define( 'URL_SITE', get_site_url() );
 require_once 'lib/cssimg.php';
 
 // DISABLE EMOJIS
@@ -22,6 +23,16 @@ add_action( 'wp_enqueue_scripts', function() {
 add_action( 'after_setup_theme', function() {
     add_theme_support( 'post-thumbnails' );
     add_theme_support( 'menus' );
+
+	add_theme_support( 'wp-block-styles' );
+	add_theme_support( 'responsive-embeds' );
+
+	// Add support for full and wide align images.
+	//add_theme_support( 'align-wide' );
+	// Add support for editor styles.
+	//add_theme_support( 'editor-styles' );
+	// Enqueue editor styles.
+	//add_editor_style( 'style-editor.css' );
 } );
 // / THEME SETUP
 
