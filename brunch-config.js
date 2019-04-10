@@ -27,6 +27,15 @@ module.exports = {
 		aliases: {},
 	},
 
+	plugins: {
+		postcss: {
+			processors: [
+				require('autoprefixer')(['last 4 versions']),
+				require('csswring')()
+			]
+		}
+	},
+	
 	sourceMaps: 'inline',
 
 };
