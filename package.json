@@ -14,15 +14,15 @@
 		"build": "brunch b -p"
 	},
 	"dependencies": {
-		"fastclick": "^1.0.6",
-		"jquery": "^3.2.1",
-		"normalize.css": "^7.0.0"
+		"jquery": "^3",
+		"normalize.css": "^7"
 	},
 	"devDependencies": {
-		"autoprefixer-brunch": "^1.8.5",
-		"clean-css-brunch": "^2.10.0",
-		"css-brunch": "^2.10.0",
-		"imagemin-brunch": "^1.0.1",
+		"autoprefixer": "^9",
+		"brunch": "^2",
+		"csswring": "^7",
+		"imagemin-brunch": "^1",
+		"postcss-brunch": "^2",
 		"uglify-js-brunch": "^2"
 	}
 }
