@@ -19,10 +19,10 @@
 	},
 	"devDependencies": {
 		"autoprefixer": "^9",
-		"brunch": "^2",
-		"csswring": "^7",
+		"cssnano": "^4",
 		"imagemin-brunch": "^1",
 		"postcss-brunch": "^2",
+		"postcss-preset-env": "^6",
 		"uglify-js-brunch": "^2"
 	}
 }

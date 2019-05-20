@@ -30,12 +30,13 @@ module.exports = {
 	plugins: {
 		postcss: {
 			processors: [
-				require('autoprefixer')(['last 4 versions']),
-				require('csswring')()
+				require( 'autoprefixer' )( ['last 4 versions'] ),
+				require( 'postcss-preset-env' )(),
+				require( 'cssnano' )( { preset: 'default' } ),
 			]
 		}
 	},
-	
+
 	sourceMaps: 'inline',
 
 };
