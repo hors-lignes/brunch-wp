@@ -15,7 +15,7 @@ module.exports = {
 	},
 
 	paths: {
-		public: '../wp-content/themes/hors-lignes',
+		public: '../wp-content/themes/cmantika',
 	},
 
 	npm: {
