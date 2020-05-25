@@ -24,7 +24,7 @@
 		"postcss-brunch": "^2",
 		"postcss-preset-env": "^6",
 		"uglify-js-brunch": "^2",
-		"brunch":"^3"
+		"brunch":"^2"
 	}
 }
  
